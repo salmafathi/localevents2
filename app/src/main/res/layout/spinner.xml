@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/spinner_background" >
+
+    <ImageView
+        android:id="@+id/categoryimage"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/categoryname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@+id/categoryimage"      
+			android:layout_marginLeft="30dp"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:singleLine="true" />
+
+</RelativeLayout>
+<!--      android:layout_toRightOf="@+id/categoryimage" -->

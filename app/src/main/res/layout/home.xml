@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/homebackground"
+     >
+	<RelativeLayout 
+    	android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp">
+        <LinearLayout 
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:id="@+id/linearLayout"
+        	android:orientation="horizontal"
+        	android:layout_alignParentBottom="true"
+        	android:layout_marginTop="10dp">
+            <Button
+        		android:id="@+id/register"
+        		android:layout_height="wrap_content"
+        		android:layout_width="fill_parent"
+        		android:textColor="#fff"
+      			android:background="#8a515a"
+        		android:layout_alignParentLeft="true"
+        		android:layout_toLeftOf="@id/login"
+        		android:layout_marginRight="5dp"
+        		android:text="Sign Up"
+        		android:layout_weight="1"
+        		android:onClick="register"/>
+    		<Button
+        		android:id="@+id/login"
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:layout_alignBaseline="@+id/register"
+        		android:background="#7ec686"
+        		android:layout_alignParentRight="true"
+        		android:text="Sign In"
+         		android:layout_weight="1"
+         		android:layout_marginLeft="5dp"
+         		android:textColor="#fff"
+         		android:onClick="login"/>
+        </LinearLayout>
+         
+<!-- 	    <com.facebook.widget.LoginButton
+        xmlns:fb="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/loginWithFacebook"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+       android:layout_above="@id/linearLayout"
+        
+        android:scaleType="centerInside"
+        fb:login_text="Login With Facebook"
+        fb:logout_text="" /> 
+	    <ImageView 
+            android:id="@+id/pic"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	 android:layout_above="@id/loginWithFacebook" 
+        	android:src="@drawable/actualuser"/>   
+        <EditText android:id="@+id/edittext1"
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_above="@id/pic"/> -->
+	</RelativeLayout>
+</RelativeLayout>
+
+   

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.localevents"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/localevent"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:debuggable="true"
+        android:theme="@style/Theme.Example" >
+        <activity
+            android:name="com.example.localevents.Home"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.localevents.HomeUser"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.localevents.Register"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.localevents.Login"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.localevents.EditProfile"
+            android:label="@string/title_activity_edit_profile"
+            android:screenOrientation="portrait"  >
+        </activity>
+  
+       
+        <activity
+            android:name="com.example.localevents.Event_Datails"
+            android:screenOrientation="portrait" />
+        
+        <activity 
+            android:name="com.example.localevents.EventsByCategories"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.example.localevents.Searchbydatecity"
+            android:label="@string/title_activity_searchbydatecity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".MainActivityUser" android:screenOrientation="portrait"/>
+        <activity android:name="com.example.localevents.JoinedSavedActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.example.localevents.Attendings" android:screenOrientation="portrait"/>
+        
+    </application>
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+</manifest>
